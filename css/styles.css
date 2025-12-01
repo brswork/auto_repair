@@ -5,6 +5,11 @@
   --accent:#3dd6c1;
   --accent-2:#4b7cff;
   --glass: rgba(255,255,255,0.04);
+  /* Warm alternate palettes (subtle tints) */
+  --alt-warm-1: rgba(255,99,71,0.04);   /* coral */
+  --alt-warm-2: rgba(255,159,67,0.04);  /* warm orange (default) */
+  --alt-warm-3: rgba(255,220,150,0.04); /* soft sand */
+  --section-alt: var(--alt-warm-2);
   --radius:12px;
   --container:1200px;
   color-scheme: dark;
@@ -40,7 +45,7 @@ body{
 .benefits li{color:var(--muted);font-size:.95rem}
 .hero-visual img{width:100%;max-width:420px;display:block}
 
-.section{padding:3rem 0}
+.section{padding:3rem 0;transition:background .25s ease,border-color .25s ease}
 .section h2{margin:0 0 .5rem}
 .section-sub{color:var(--muted);margin-bottom:1rem}
 
@@ -56,7 +61,23 @@ body{
 
 .booking .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
 .form-grid label{display:block}
-.form-grid input,.form-grid textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+.form-grid input,.form-grid textarea{
+  width:100%;
+  padding:.7rem .8rem;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+  color:inherit;
+  transition:box-shadow .15s ease,border-color .15s ease,background .15s ease;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+.form-grid input::placeholder,.form-grid textarea::placeholder{color:rgba(255,255,255,0.45)}
+.form-grid input:focus,.form-grid textarea:focus{
+  outline:0;
+  border-color: rgba(61,214,193,0.9);
+  box-shadow: 0 0 0 4px rgba(61,214,193,0.10);
+  background: rgba(255,255,255,0.04);
+}
 .form-grid .full{grid-column:1/-1}
 .form-actions{display:flex;gap:.5rem}
 
@@ -93,6 +114,27 @@ body{
   .partners-grid,.gallery-grid{grid-template-columns:repeat(2,1fr)}
   .contacts-grid{grid-template-columns:1fr}
 }
+
+/* Section separators and subtle alternation for clearer visual separation */
+main > section + section{border-top:1px solid rgba(255,255,255,0.03)}
+/* use CSS variable so we can switch palettes quickly */
+main > section:nth-of-type(even){background:var(--section-alt)}
+main > section{padding-top:3.5rem;padding-bottom:3.5rem}
+
+/* Make hero prominent (no overlay) */
+main > section.hero{background:transparent}
+
+/* Slight lift for important blocks to separate from background */
+.card, .contact-card, .partner, .gallery-item, .test{box-shadow:0 8px 24px rgba(2,6,23,0.55)}
+
+/* Small accessibility improvement: increase contrast for alternated sections */
+main > section:nth-of-type(even) .section-sub, main > section:nth-of-type(even) .muted{color:rgba(255,255,255,0.75)}
+
+/* Theme helper classes: add to <body> to preview alternatives */
+.theme-warm-coral { --section-alt: var(--alt-warm-1); }
+.theme-warm-orange { --section-alt: var(--alt-warm-2); }
+.theme-warm-sand { --section-alt: var(--alt-warm-3); }
+
 
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr}
