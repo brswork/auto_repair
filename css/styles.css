@@ -153,3 +153,8 @@ main > section:nth-of-type(even) .section-sub, main > section:nth-of-type(even) 
 
 /* small utilities */
 .hidden{display:none}
+
+/* Reveal-on-scroll utilities */
+.reveal-hidden{opacity:0;transform:translateY(18px);will-change:opacity,transform}
+.reveal-visible{opacity:1;transform:translateY(0);transition:opacity .6s cubic-bezier(.2,.9,.2,1),transform .6s cubic-bezier(.2,.9,.2,1)}
+

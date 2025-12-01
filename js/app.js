@@ -38,4 +38,36 @@ document.addEventListener('DOMContentLoaded',()=>{
       item.classList.toggle('open');
     });
   });
+
+  // Reveal sections on scroll using IntersectionObserver
+  (function(){
+    const sections = Array.from(document.querySelectorAll('main > section'));
+    if(!sections.length) return;
+
+    // mark initial hidden state
+    sections.forEach((sec, i)=>{
+      sec.classList.add('reveal-hidden');
+      // stagger via inline transition delay for children cards (if any)
+      sec.style.setProperty('--reveal-delay', `${i * 80}ms`);
+    });
+
+    const io = new IntersectionObserver((entries, obs)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const el = entry.target;
+          // apply visible class with small stagger for better effect
+          const delay = getComputedStyle(el).getPropertyValue('--reveal-delay') || '0ms';
+          window.requestAnimationFrame(()=>{
+            setTimeout(()=>{
+              el.classList.remove('reveal-hidden');
+              el.classList.add('reveal-visible');
+            }, parseInt(delay));
+          });
+          obs.unobserve(el);
+        }
+      });
+    },{root:null,rootMargin:'0px 0px -10% 0px',threshold:0.12});
+
+    sections.forEach(s=>io.observe(s));
+  })();
 });
