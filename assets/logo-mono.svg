@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-label="AutoMotoLab logo mono">
+  <rect width="120" height="40" rx="8" fill="transparent"/>
+  <!-- monochrome monogram + text -->
+  <g transform="translate(6,4)" fill="none" stroke="#e6eef6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 28 L14 6 L22 28" />
+    <path d="M18 22 L26 12 L34 22 L42 12" />
+  </g>
+  <g transform="translate(50,22)" fill="#e6eef6" font-family="Inter, Arial, sans-serif" font-weight="700">
+    <text x="0" y="0" font-size="14">AutoMoto</text>
+    <text x="0" y="14" font-weight="600" fill="#9aa4b2" font-size="10">Lab</text>
+  </g>
+</svg>

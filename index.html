@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Auto & Moto Repair — Сервис ремонта автомобилей и мотоциклов</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" alt="AutoMotoLab" class="brand-logo" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about">О нас</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#partners">Партнёры</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#faq">FAQ</a>
+        <a href="#booking" class="cta">Записаться</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Профессиональный ремонт автомобилей и мотоциклов</h1>
+          <p class="lead">Современный сервис, диагностическое оборудование последнего поколения, опытные мастера и прозрачные цены.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#booking">Записаться онлайн</a>
+            <a class="btn ghost" href="#services">Наши услуги</a>
+          </div>
+          <ul class="benefits">
+            <li>Гарантия на работы</li>
+            <li>Оригинальные запчасти и аналоги</li>
+            <li>Срочный ремонт и техобслуживание</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/hero.svg" alt="Автомобиль и мотоцикл" />
+        </div>
+      </div>
+    </section>
+
+    <!-- О нас (first) -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <h2>О нас</h2>
+          <p>Мы — команда инженеров и механиков с многолетним опытом. Используем диагностическое оборудование мировых брендов, ведем прозрачную историю работ и предлагаем удобную онлайн-запись.</p>
+          <ul class="features">
+            <li>24 мес. гарантии на работы</li>
+            <li>Сертифицированные мастера</li>
+            <li>Онлайн-уведомления о готовности</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="num">12k+</span><span class="label">Ремонтов</span></div>
+          <div class="stat"><span class="num">98%</span><span class="label">Удовлетворённость</span></div>
+          <div class="stat"><span class="num">8 лет</span><span class="label">Опыт работы</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2>Отзывы</h2>
+        <div class="test-list">
+          <blockquote class="test">"Быстро нашли причину стука, сделали качественно — рекомендую!" — Алексей</blockquote>
+          <blockquote class="test">"Починили мотоцикл после падения, восстановили электрику." — Марина</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наши партнёры -->
+    <section id="partners" class="section partners">
+      <div class="container">
+        <h2>Наши партнёры</h2>
+        <p class="section-sub">Сертифицированные поставщики запчастей и оборудования</p>
+        <div class="partners-grid">
+          <div class="partner">Brand A</div>
+          <div class="partner">Brand B</div>
+          <div class="partner">Brand C</div>
+          <div class="partner">Brand D</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Услуги</h2>
+        <p class="section-sub">Мы обслуживаем автомобили и мотоциклы любых марок</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Диагностика и ремонт двигателя</h3>
+            <p>Современная диагностика, ремонт и замена узлов двигателя.</p>
+          </article>
+          <article class="card">
+            <h3>Ходовая и подвеска</h3>
+            <p>Ремонт и регулировка подвески, замена амортизаторов и втулок.</p>
+          </article>
+          <article class="card">
+            <h3>Тормозная система</h3>
+            <p>Полная проверка, замена колодок, дисков и обслуживание тормозного контура.</p>
+          </article>
+          <article class="card">
+            <h3>Мото-сервис</h3>
+            <p>Тонкая настройка карбюраторов/инжекторов, тюнинг и восстановление после падений.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Галерея работ</h2>
+        <p class="section-sub">Примеры наших ремонтов и доработок</p>
+        <div class="gallery-grid">
+          <div class="gallery-item">Фото 1</div>
+          <div class="gallery-item">Фото 2</div>
+          <div class="gallery-item">Фото 3</div>
+          <div class="gallery-item">Фото 4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q">Какая гарантия на работы?</button>
+            <div class="faq-a">Мы даём до 24 месяцев гарантии в зависимости от типа работы и использованных запчастей.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Можно ли оставить машину на длительное хранение?</button>
+            <div class="faq-a">Да, у нас есть охраняемая стоянка по договорённости.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Работаете ли вы с редкими моделями?</button>
+            <div class="faq-a">Да, но сроки и стоимость зависят от доступности запчастей.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Запись -->
+    <section id="booking" class="section booking">
+      <div class="container">
+        <h2>Запись на обслуживание</h2>
+        <p class="section-sub">Оставьте заявку — мы подтвердим время и подготовим замену деталей.</p>
+        <form id="bookingForm" class="form-grid">
+          <label>
+            Имя
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" />
+          </label>
+          <label>
+            Техника (марка/модель)
+            <input type="text" name="vehicle" required />
+          </label>
+          <label>
+            Предпочтительная дата
+            <input type="date" name="date" />
+          </label>
+          <label class="full">
+            Примечание
+            <textarea name="note" rows="3"></textarea>
+          </label>
+          <div class="form-actions full">
+            <button class="btn primary" type="submit">Отправить заявку</button>
+            <button class="btn ghost" type="reset">Очистить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts-grid">
+        <div class="contact-card">
+          <h2>Контакты</h2>
+          <p>Адрес: г. Москва, ул. Ремонтная, 12</p>
+          <p>Телефон: <a href="tel:+79000000000">+7 900 000-00-00</a></p>
+          <p>Email: <a href="mailto:info@automotolab.example">info@automotolab.example</a></p>
+          <h3>Режим работы</h3>
+          <ul class="hours">
+            <li>Пн–Пт: 09:00 — 19:00</li>
+            <li>Сб: 10:00 — 16:00</li>
+            <li>Вс: выходной</li>
+          </ul>
+        </div>
+        <div class="map-wrap">
+          <h2>Где мы</h2>
+          <div class="map-frame">
+            <iframe src="https://www.google.com/maps?q=Москва,+ул.+Ремонтная,+12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>AutoMotoLab</strong>
+        <p>Адрес: г. Москва, ул. Ремонтная, 12 · Тел: +7 900 000-00-00</p>
+      </div>
+      <div class="socials">
+        <a href="#">Политика</a>
+        <a href="#">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

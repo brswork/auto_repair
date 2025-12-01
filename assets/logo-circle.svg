@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="AutoMotoLab logo circle">
+  <defs>
+    <linearGradient id="gc" x1="0" x2="1">
+      <stop offset="0" stop-color="#3dd6c1"/>
+      <stop offset="1" stop-color="#4b7cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <circle cx="100" cy="100" r="92" fill="url(#gc)"/>
+  <!-- monogram centered -->
+  <g transform="translate(36,36)" stroke="#071022" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M6 88 L28 12 L50 88" />
+    <path d="M42 70 L64 34 L86 70 L108 34" />
+  </g>
+  <g transform="translate(38,132)" fill="#071022" font-family="Inter, Arial, sans-serif" font-weight="700">
+    <text x="0" y="0" font-size="22">AutoMoto</text>
+    <text x="0" y="22" font-weight="600" font-size="14">Lab</text>
+  </g>
+</svg>
