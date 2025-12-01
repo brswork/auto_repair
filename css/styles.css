@@ -92,9 +92,12 @@ body{
 .partners-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem}
 .partner{background:var(--glass);padding:1rem;border-radius:10px;text-align:center;color:var(--muted)}
 
+.partner img{max-width:100%;height:56px;object-fit:contain;display:inline-block}
+
 /* gallery */
 .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem}
 .gallery-item{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);height:140px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;border-radius:10px}
 
 /* FAQ */
 .faq-list{margin-top:1rem;display:grid;gap:.75rem}
